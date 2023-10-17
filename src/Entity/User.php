@@ -30,6 +30,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?string $password = null;
 
+    /**
+     * Relation with many wrote reviews
+     */
+    #[ORM\OneToMany(mappedBy: 'user', targetEntity: Review::class)]
+    private $advices;
+
+    /**
+     * Relation with many reviews received
+     */
+    #[ORM\OneToMany(mappedBy: 'seller', targetEntity: Review::class)]
+    private $ratings;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -99,4 +111,48 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
     }
+
+    /**
+     * Return all reviews wrote by the user
+     *
+     * @return Review[]
+     */
+    public function getAdvices(): array
+    {
+        return $this->advices;
+    }
+
+    /**
+     * Return all reviews received by the user
+     *
+     * @return Review[]
+     */
+    public function getRatings(): array
+    {
+        return $this->ratings;
+    }
+
+    /**
+     * @param mixed $advices
+     * @return User
+     */
+    public function setAdvices($advices)
+    {
+        $this->advices = $advices;
+        return $this;
+    }
+
+    /**
+     * @param mixed $ratings
+     * @return User
+     */
+    public function setRatings($ratings)
+    {
+        $this->ratings = $ratings;
+        return $this;
+    }
+
+
+
+
 }

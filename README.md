@@ -14,6 +14,7 @@ cd evaluable && \
 docker-compose up -d && \
 composer install && \
 npm install && \
+bin/console doctrine:migrations:migrate && \
 npm run dev & symfony server:start
 ```
 
