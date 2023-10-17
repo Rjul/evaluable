@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\PersistentCollection;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -139,7 +140,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      *
      * @return Review[]
      */
-    public function getAdvices(): array
+    public function getAdvices(): PersistentCollection
     {
         return $this->advices;
     }
@@ -149,7 +150,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      *
      * @return Review[]
      */
-    public function getRatings(): array
+    public function getRatings(): PersistentCollection
     {
         return $this->ratings;
     }

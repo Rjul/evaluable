@@ -1,0 +1,10 @@
+
+{# create a list of reviews#}
+
+{% for review in seller.ratings|slice(0, 10) %}
+    <div class="review">
+        <p>{{ review.content }}</p>
+        <p>{{ review.stars }}</p>
+    </div>
+{% endfor %}
+```

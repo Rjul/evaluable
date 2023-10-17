@@ -1,3 +1,28 @@
-body {
-    background-color: lightgray;
+$stars-size: 16px;
+
+$half-stars-size: $stars-size / 2;
+
+.card-user-picture-announce {
+    overflow: visible !important;
+
+    .ratting {
+        position: absolute;
+
+    }
+
+    .ratting-pos-1 {
+        transform: translate(40px - $half-stars-size, 40px - $half-stars-size) rotateZ( 38deg ) translateY(50px);
+    }
+    .ratting-pos-2 {
+        transform: translate(40px - $half-stars-size, 40px - $half-stars-size) rotateZ( 19deg ) translateY(50px);
+    }
+    .ratting-pos-3 {
+        transform: translate(40px - $half-stars-size, 40px - $half-stars-size) rotateZ( 0deg ) translateY(50px);
+    }
+    .ratting-pos-4 {
+        transform: translate(40px - $half-stars-size, 40px - $half-stars-size) rotateZ( -19deg ) translateY(50px);
+    }
+    .ratting-pos-5 {
+        transform: translate(40px - $half-stars-size, 40px - $half-stars-size) rotateZ( -38deg ) translateY(50px);
+    }
 }

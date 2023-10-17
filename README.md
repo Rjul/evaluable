@@ -15,6 +15,7 @@ docker-compose up -d && \
 composer install && \
 npm install && \
 bin/console doctrine:migrations:migrate && \
+bin/console doctrine:fixtures:load && \
 npm run dev & symfony server:start
 ```
 
