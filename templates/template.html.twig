@@ -4,25 +4,30 @@
 
 
 {% block body %}
-    <div class="container">
+    <div class="container-fluid">
+        <h1>Test technique</h1>
+        <h2>Card vendeur détail d'annonce</h2>
         <div class="d-flex justify-content-around">
             {% include 'seller/item.html.twig' %}
 
 
             {% if app.user %}
-                {% include 'seller/review-form.html.twig' %}
+{#                {% include 'seller/review-form.html.twig' %}#}
 
             {% elseif not app.user %}
                 <div class="m-5">
                     <p>you need to be connected to create a review</p>
                     <a href="{{ path('app_login') }}">login</a>
                     <a href="{{ path('app_register') }}">register</a>
+                    doesn't implemented yet
                 </div>
 
             {% endif %}
 
         </div>
-        <div>
+
+        <h2>Fausse liste de reviews</h2>
+        <div class="d-flex flex-row flex-wrap">
             {% include 'seller/review-list.html.twig' %}
 
         </div>

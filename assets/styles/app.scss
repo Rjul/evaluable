@@ -7,7 +7,6 @@ $half-stars-size: $stars-size / 2;
 
     .ratting {
         position: absolute;
-
     }
 
     .ratting-pos-1 {
@@ -25,4 +24,20 @@ $half-stars-size: $stars-size / 2;
     .ratting-pos-5 {
         transform: translate(40px - $half-stars-size, 40px - $half-stars-size) rotateZ( -38deg ) translateY(50px);
     }
+}
+
+.review-list {
+    .announce-info-side {
+        .user-infos {
+            margin-bottom: 10px;
+        }
+    }
+    white-space: nowrap;
+}
+
+// overide
+
+.announce-home-presentation {
+    min-height: 0;
+    margin-bottom: 15px;
 }

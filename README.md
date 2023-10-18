@@ -7,7 +7,7 @@
 - extension php-pgsql
 
 ## Installation
-
+### Linux / Ubuntu
 ```bash
 git clone https://github.com/HummelJulien/evaluable.git
 cd evaluable && \

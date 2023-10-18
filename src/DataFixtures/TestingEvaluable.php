@@ -19,7 +19,7 @@ class TestingEvaluable extends Fixture
     {
         $seller = new User();
         $seller->setEmail('user-seller@gmail.com');
-        $seller->setName('Seller');
+        $seller->setName('Nom vendeur');
         $seller->setPassword('password');
         $seller->setRoles(['ROLE_USER']);
         $manager->persist($seller);
