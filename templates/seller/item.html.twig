@@ -45,7 +45,7 @@
                             {{ seller.name }}
                         </div>
                         <div class="text-small time pt-1">Mis à jour aujourd'hui</div>
-                        <a href="#" class="text-small time pt-1">Voir tous les avis</a>
+                        <a href="{{ path('review_seller_show', {'slug': seller.slug }) }}" class="text-small time pt-1">Voir tous les avis</a>
                     </div>
 
                 </div>

@@ -25,5 +25,23 @@ class ReviewRepository extends ServiceEntityRepository
         return $result;
     }
 
+    public function getBySeller(User $seller, int $page = 1)
+    {
+        $qb = $this->createQueryBuilder('r');
+        $qb->where('r.seller = :seller')
+            ->setParameter('seller', $seller)
+            ->orderBy('r.id', 'DESC');
+
+        $limit = Review::LIMIT_PER_PAGE;
+        $offset = ($page - 1) * $limit;
+
+        $qb->setMaxResults($limit)
+            ->setFirstResult($offset);
+
+        $result = $qb->getQuery()->getResult();
+
+        return $result;
+    }
+
 
 }

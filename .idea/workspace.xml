@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55acae3a-4cd2-4ab4-b01a-b42d25c0b306" name="Changes" comment="Urgent delivery, they cut me off from setting up everything I wanted to do. partial demo">
-      <change afterPath="$PROJECT_DIR$/src/Controller/ReviewController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Interface/SlugableInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Trait/SlugableTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventListener/SlugableEntityListener.php" afterDir="false" />
+    <list default="true" id="55acae3a-4cd2-4ab4-b01a-b42d25c0b306" name="Changes" comment="Slug component">
+      <change afterPath="$PROJECT_DIR$/templates/review/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.override.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.override.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Review.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ReviewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ReviewRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ReviewRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/Authenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/Authenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/seller/item.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/seller/item.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +229,7 @@
       <workItem from="1697699798482" duration="647000" />
       <workItem from="1697729216718" duration="1856000" />
       <workItem from="1697977940529" duration="378000" />
-      <workItem from="1697978352131" duration="2518000" />
+      <workItem from="1697978352131" duration="3454000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: init project">
       <option name="closed" value="true" />
@@ -319,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697652572493</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Slug component">
+      <option name="closed" value="true" />
+      <created>1697980941132</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1697980941132</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +355,7 @@
     <MESSAGE value="Add fixture" />
     <MESSAGE value="step" />
     <MESSAGE value="Urgent delivery, they cut me off from setting up everything I wanted to do. partial demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Urgent delivery, they cut me off from setting up everything I wanted to do. partial demo" />
+    <MESSAGE value="Slug component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Slug component" />
   </component>
 </project>

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h1>Test technique</h1>
+        <h2>Tout les avis a propos de {{ seller.name }}</h2>
+        <div class="d-flex justify-content-around">
+            <div class="d-flex flex-row flex-wrap">
+                {% include 'seller/review-list.html.twig' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
