@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55acae3a-4cd2-4ab4-b01a-b42d25c0b306" name="Changes" comment="Slug component">
-      <change afterPath="$PROJECT_DIR$/templates/review/show.html.twig" afterDir="false" />
+    <list default="true" id="55acae3a-4cd2-4ab4-b01a-b42d25c0b306" name="Changes" comment="register fixe / form / review repo update">
+      <change afterPath="$PROJECT_DIR$/templates/review/form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ReviewController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ReviewRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ReviewRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/Authenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/Authenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/seller/item.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/seller/item.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SellerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SellerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ReviewSellerType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ReviewSellerType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/template.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +229,7 @@
       <workItem from="1697699798482" duration="647000" />
       <workItem from="1697729216718" duration="1856000" />
       <workItem from="1697977940529" duration="378000" />
-      <workItem from="1697978352131" duration="3454000" />
+      <workItem from="1697978352131" duration="8293000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: init project">
       <option name="closed" value="true" />
@@ -327,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697980941132</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="register fixe / form / review repo update">
+      <option name="closed" value="true" />
+      <created>1697981988759</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697981988759</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +364,7 @@
     <MESSAGE value="step" />
     <MESSAGE value="Urgent delivery, they cut me off from setting up everything I wanted to do. partial demo" />
     <MESSAGE value="Slug component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Slug component" />
+    <MESSAGE value="register fixe / form / review repo update" />
+    <option name="LAST_COMMIT_MESSAGE" value="register fixe / form / review repo update" />
   </component>
 </project>

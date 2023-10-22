@@ -1,7 +1,4 @@
-
-
 {% extends 'base.html.twig' %}
-
 
 {% block body %}
     <div class="container-fluid">
@@ -9,27 +6,11 @@
         <h2>Card vendeur détail d'annonce</h2>
         <div class="d-flex justify-content-around">
             {% include 'seller/item.html.twig' %}
-
-
-            {% if app.user %}
-{#                {% include 'seller/review-form.html.twig' %}#}
-
+            {% if app.user and form %}
+                {% include 'review/form.html.twig' %}
             {% elseif not app.user %}
-                <div class="m-5">
-                    <p>you need to be connected to create a review</p>
-                    <a href="{{ path('app_login') }}">login</a>
-                    <a href="{{ path('app_register') }}">register</a>
-                    doesn't implemented yet
-                </div>
-
+                <div class="m-5"></div>
             {% endif %}
-
         </div>
-
-
     </div>
-
-
-
-
 {% endblock %}

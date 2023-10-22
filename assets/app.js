@@ -9,3 +9,21 @@
 
 import './styles/app.scss';
 
+const initStarRating = () => {
+    const inputFormStars = document.getElementById('review_seller_stars');
+    const starsSelectorElms = document.getElementsByClassName('star-radio-elm');
+    if (inputFormStars && starsSelectorElms) {
+        Array.from(starsSelectorElms).forEach((elm) => {
+            elm.addEventListener('click', (e) => {
+                console.log(e.target);
+                inputFormStars.value = e.target.value;
+            });
+        });
+    }
+}
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    initStarRating();
+});
