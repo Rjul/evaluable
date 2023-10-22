@@ -12,6 +12,10 @@ use Symfony\Component\Validator\Constraints as Assert;
 #[UniqueEntity(fields: ['id'])]
 class Review
 {
+    /**
+     * Pagination limit
+     */
+    const LIMIT_PER_PAGE = 30;
 
     /**
      * Store id of the review
