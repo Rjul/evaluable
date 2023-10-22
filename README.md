@@ -9,10 +9,13 @@
 ## Installation
 ### Linux / Ubuntu
 ```bash
-git clone https://github.com/Rjul/evaluable.git && cd evaluable && docker-compose up -d && composer install && npm install && bin/console doctrine:migrations:migrate && bin/console doctrine:fixtures:load && npm run dev & symfony server:start
+git clone https://github.com/Rjul/evaluable.git && cd evaluable && docker-compose up -d && composer install && npm install && bin/console doctrine:migrations:migrate && bin/console doctrine:fixtures:load 
 ```
+```bash
+npm run dev & symfony server:start
+```
+
 
 ## Configuration
 
 - Activate the extension php-pgsql
-

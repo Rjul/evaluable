@@ -35,7 +35,7 @@ class ReviewSellerType extends AbstractType
             ->add('submit', SubmitType::class, [
                 'label' => 'Envoyer mon avis',
                 'attr' => [
-                    'class' => 'btn btn-primary mt-3'
+                    'class' => 'gtm-vendre btn btn-square btn-green text-uppercase mt-2'
                 ]
             ])
             ->setAction('/')
